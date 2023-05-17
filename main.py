@@ -21,4 +21,10 @@ def write(file, value):
 # Randomize two variables
 def randomize(a, b):
     return random.choice(a, b)
-
+# Check if a string can be converted into an int 
+def canBeInt(str):
+    try:
+        int(str)
+        return True
+    except ValueError:
+        return False
