@@ -28,3 +28,10 @@ def canBeInt(str):
         return True
     except ValueError:
         return False
+# Check if a string can be converted into a float 
+def canBeFloat(str):
+    try:
+        float(str)
+        return True
+    except ValueError:
+        return False
