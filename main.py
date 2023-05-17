@@ -10,4 +10,4 @@ def read(file):
         with open(file, "r") as f:
             return f.read().strip()
     else:
-        print("Usefuldefs: File {} does not exists.".format(file))
+        return "Usefuldefs: File {} does not exists.".format(file)
