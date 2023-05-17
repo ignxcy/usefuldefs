@@ -10,7 +10,7 @@ def read(file):
         with open(file, "r") as f:
             return f.read().strip()
     else:
-        return "Usefuldefs: File {} does not exists.".format(file)
+        return "Usefuldefs: File {} does not exist.".format(file)
 # Write to a file
 def write(file, value):
     if os.path.exists(file):
@@ -18,3 +18,7 @@ def write(file, value):
             f.write(value)
     else:
         print("Usefuldefs: File {} does not exist".format(file))
+# Randomize two variables
+def randomize(a, b):
+    return random.choice(a, b)
+
