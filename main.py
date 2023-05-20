@@ -35,3 +35,9 @@ def canBeFloat(str):
         return True
     except ValueError:
         return False
+# Make a file 
+def touch(file):
+    os.mknod(file)
+# Make a folder
+def mkdir(folder):
+    os.mkdir(folder)
