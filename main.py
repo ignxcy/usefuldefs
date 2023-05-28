@@ -15,6 +15,12 @@ def read(file):
 # Get the output of a system command
 def cmdOutput(command):
     return subprocess.getoutput(command)
+# Start a Python file
+def startFile(file):
+    if file.endswith(".py"):
+        os.system(f"python3 {file}")
+    else:
+        print("File has to end with .py")
 # Write to a file
 def write(file, value):
     if os.path.exists(file):
