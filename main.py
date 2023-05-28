@@ -1,5 +1,6 @@
 import random
 import os
+import subprocess
 
 # Do a system command
 def cmd(command):
@@ -11,6 +12,9 @@ def read(file):
             return f.read().strip()
     else:
         return "Usefuldefs: File {} does not exist.".format(file)
+# Get the output of a system command
+def cmdOutput(command):
+    return subprocess.getoutput(command)
 # Write to a file
 def write(file, value):
     if os.path.exists(file):
