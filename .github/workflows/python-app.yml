@@ -32,7 +32,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Run custom tests
       run: |
-        python custom_tests.py
+        python .github/workflows/custom_tests.py
     - name: Run main.py
       run: |
         python main.py
