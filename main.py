@@ -25,6 +25,9 @@ def write(file, value):
 # Randomize two variables
 def randomize(a, b):
     return random.choice(a, b)
+# Generate a random number
+def randomInt(a, b):
+    return random.randint(a, b)
 # Check if a string can be converted into an int 
 def canBeInt(str):
     try:
