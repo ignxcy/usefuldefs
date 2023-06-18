@@ -15,6 +15,9 @@ def read(file):
 # Get the output of a system command
 def cmdOutput(command):
     return subprocess.getoutput(command)
+# Get the time of executing a system command
+def cmdTime(command):
+    return subprocess.getoutput(f"time {command}")
 # Write to a file
 def write(file, value):
     if os.path.exists(file):
