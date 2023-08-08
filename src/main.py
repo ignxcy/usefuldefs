@@ -50,4 +50,10 @@ def touch(file):
     os.mknod(file)
 # Make a folder
 def mkdir(folder):
-    os.mkdir(folder)
+   os.mkdir(folder)
+# Check if a user that is running the program is a root (Unix only)
+def rootCheck():
+    if subprocess.getoutput("./rootcheck.sh") == "yes":
+        return True
+    else:
+        return False
