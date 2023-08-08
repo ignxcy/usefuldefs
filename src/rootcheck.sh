@@ -1,7 +1,7 @@
 #!/usr/bin/sh
 
 if [ $(id -u) -eq 0 ]; then
-    echo "The current user is root."
+    echo "yes"
 else
-    echo "The current user is not root."
+    echo "no"
 fi
